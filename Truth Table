@@ -1,0 +1,21 @@
+--------------------------------------
+32-BIT ALU CONTROL TRUTH TABLE (V1)
+--------------------------------------
+
+Control Code | Operation     | Description
+-------------|---------------|-------------------------------
+ 000         | ADD           | A + B
+ 001         | SUBTRACT      | A - B
+ 010         | MULTIPLY      | A * B (integer Multiplication)
+ 011         | DIVIDE        | A / B (integer division)
+ 100         | XOR           | Bitwise A XOR B
+ 101         | AND           | Bitwise A AND B
+ 110         | OR            | Bitwise A OR B
+ 111         | NAND          | NOT (A AND B)
+
+Notes:
+- All operations are performed on **32-bit binary inputs**
+- For division, output is **integer quotient only** (remainder is ignored)
+- NAND = NOT (A AND B), implemented with an AND gate + NOT gate
+- Operations selected using a 3-bit control signal fed into a decoder
+- A multiplexer is used to get the required output using the same 3-bit control signal
