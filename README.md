@@ -4,12 +4,6 @@ A complete 32-bit Arithmetic Logic Unit (ALU) designed using Logisim. This circu
 
 ---
 
-## 🎯 Objective
-
-To design and simulate a 32-bit ALU that mimics the functional behavior of a processor’s execution unit, handling integer operations with accurate bitwise and arithmetic logic.
-
----
-
 ## ⚙️ Features
 
 - **32-bit Inputs**: Operand A and Operand B
